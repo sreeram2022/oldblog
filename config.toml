@@ -1,0 +1,38 @@
+baseURL = "https://ericmurphy.xyz/"
+title = "Venkata Sreeram"
+
+[permalinks]
+    post = "/blog/:slug"
+
+[menu]
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 10
+
+   [[menu.main]]
+    name = "Resume"
+    url = "/resume"
+    weight = 40
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 50
+
+
+  [[menu.social]]
+    name = "GitHub"
+    pre = "github"
+    url = "https://github.com/sreeram2022"
+    weight = 10
+
+ 
+
+
+[markup]
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+  [markup.highlight]
+    style = 'catppuccin-macchiato'
