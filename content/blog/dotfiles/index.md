@@ -6,3 +6,4 @@ tags:
   - Mac
 ---
 I'll share my dot files in this post.
+![my dot files](dot.png)

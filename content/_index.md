@@ -1,6 +1,6 @@
 ---
 title: "Hey, I'm sreeram."
-description: "I'm a **web developer** and **YouTuber**. I love to try new things.\n\n
+description: "I'm passionate about linux & data science. I love to try new things.\n\n
 In this blog I share my tech exploration, featuring personalized configurations and passionate hands-on projects."
 ---
 

@@ -43,6 +43,9 @@ set -g default-terminal "screen-256color"
 set -ga terminal-overrides ",xterm-256color:Tc"
 
 ```
+!![Tmux](tmux.png)
+
+
 
 
 I can also customize the status bar(mostly colours) and few other things, but this configuration is more than enough to get the job done for me.

@@ -44,7 +44,7 @@ output_path = os.path.expanduser("~/highlight.txt")
 
 extract_highlights(pdf_path, output_path)
 ```
-
+![Highlighted text](hi.png)
 
 Before writing each highlight to the file, the script writes the page number.
 After each highlight, a blank line is added to separate highlights for better readability. 
