@@ -1,11 +1,10 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-tags:
-  - Linux
-  - Mac
-  - Fun
-  - Python
-  - Shell
+title: "{{ humanize .Name | title }}"
+date: "{{ .Date }}"
+draft: true
+comments: false
+socialShare: true
+toc: false
+cover:
+  src: cover.png
 ---
-

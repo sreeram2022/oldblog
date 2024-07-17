@@ -1,10 +1,11 @@
 ---
-title: "My vim usage"
-date: 2023-08-21T19:41:57+07:00
-tags:
-  - Linux
-  - Mac
+title: "Vim usage"
+date: "2021-10-16T23:51:37+02:00"
+comments: false
+socialShare: true
+toc: true
 ---
-My vim.
 
-![My vim](vim.jpg)
+![It's vim](vim.jpg)
+
+## Learn

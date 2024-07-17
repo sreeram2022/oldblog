@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Sreeram Venkata",
+    "label": "Programmer",
+    "image": "/image.png",
+    "email": "pvsreeram@icloud.com",
+    "summary": "Skilled in deep learning and data analytics, with hands-on experience in developing and deploying projects; Proficient in Python, SQL, Linux and other standard tools, with a proven track record of academic excellence",
+    "location": {
+      "city": "Banglore"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "sreeram2022",
+        "url": "https://github.com/sreeram2022/blog"
+      }
+    ]
+  }
+}

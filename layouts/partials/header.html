@@ -1,18 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-    {{ $style := resources.Get "/css/style.css" | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css" media="all" />
-	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-	{{ with .OutputFormats.Get "rss" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{ end -}}
-</head>
+<header>
+  <a
+    class="logo"
+    href="
+    {{- with $.Site.Params.Logo.URL -}}
+      {{- . -}}
+    {{- else -}}
+      {{- $.Site.BaseURL -}}
+    {{- end -}}"
+  >
+    {{ with $.Site.Params.Logo.Text }}
+      <div class="logo__text">{{ . }}</div>
+    {{ end }}
+    <div class="logo__chevron">></div>
+    <div class="logo__cursor">█</div>
+  </a>
 
-<body>
+  <div class="search">
+    <input
+      id="search__text"
+      type="search"
+      placeholder="Search..."
+      aria-label="Search"
+      autocomplete="off"
+    />
+    <div id="search_suggestions" class="search__suggestions--hidden"></div>
+  </div>
 
-{{ partial "nav.html" . }}
-<main class="content">
+  <nav id="menu">
+    <ul class="menu--horizontal">
+      {{ range $.Site.Menus.main }}
+        <li class="menu__item">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <div class="menu__burger">
+      <!-- Invisible checkbox indicating menu state -->
+      <input class="menu__item" type="checkbox" aria-label="Open main menu" />
+
+      {{ partial "icons/tabler-icon.html" "menu-2" }}
+
+
+      <ul class="menu--vertical">
+        {{ range $.Site.Menus.main }}
+          <li>
+            <a class="menu__item" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+
+  <button class="theme__toggle light--hidden" aria-label="Toggle light mode">
+    {{ partial "icons/tabler-icon.html" "sun" }}
+  </button>
+
+  <button class="theme__toggle dark--hidden" aria-label="Toggle dark mode">
+    {{ partial "icons/tabler-icon.html" "moon" }}
+  </button>
+</header>

@@ -1,26 +1,12 @@
-{{ partial "header.html" . }}
-
-<section class="hero">
-<div>
-<h1>{{ .Title }}</h1>
-{{ .Description | markdownify }}
-</div>
-<div>
-{{ partial "avatar.html" }}
-</div>
-</section>
-
-{{ .Content }}
-
-<h2>Latest posts</h2>
-<ul class="home-posts">
-{{ range ( where .Site.RegularPages "Type" "blog" | first 5 ) }}
-<li class="home-posts-item">
-    <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-</li>
-{{end}}
-</ul>
-
-{{ partial "footer.html" . }}
-
+{{ define "main" }}
+  <div class="content-section">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Content }}
+      <div>{{ . }}</div>
+    {{ end }}
+  </div>
+  <!-- See https://gohugo.io/functions/where/#mainsections -->
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ $paginator := .Paginate $pages }}
+  {{ partial "post-list.html" $paginator }}
+{{ end }}

@@ -1,9 +1,9 @@
-{{ partial "header.html" . }}
-
-<h1>{{ .Title }}</h1>
-
-{{ .Content }}
-
-{{ partial "posts.html" . }}
-
-
+{{ define "main" }}
+  <div class="content-section">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Content }}
+      <div>{{ . }}</div>
+    {{ end }}
+  </div>
+  {{ partial "post-list.html" .Paginator }}
+{{ end }}

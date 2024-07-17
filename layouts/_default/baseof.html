@@ -1,0 +1,27 @@
+<!doctype html>
+<html
+  lang="{{ .Site.Language.Lang | default "en" }}"
+  data-theme="{{ .Param "defaultTheme" | default "light" }}"
+>
+  {{ partial "head/head.html" . }}
+  <body>
+    <div class="layout">
+      {{ partial "header.html" . }}
+      <main>
+        <div class="content">
+          {{ block "main" . }}{{ end }}
+        </div>
+        {{ if .IsHome }}
+          {{ partial "sidebar.html" . }}
+        {{ else }}
+          <div class="sidebar">
+            <h2>Table of Contents</h2>
+            {{ .TableOfContents }}
+            <!-- Add other sidebar features for individual posts here -->
+          </div>
+        {{ end }}
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>
