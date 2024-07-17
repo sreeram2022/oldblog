@@ -1,4 +1,4 @@
-import Prism from "prismjs";
+@import Prism from "prismjs";
 
 {{ range $.Site.Params.prism.languages }}
   import "prismjs/components/prism-{{ . }}";
