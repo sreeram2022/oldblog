@@ -1,4 +1,4 @@
-@import "blog/prismjs/plugins/toolbar/prism-toolbar.css";
+@import "../blog/prismjs/plugins/toolbar/prism-toolbar.css";
 
 {{ range $.Site.Params.prism.languages }}
   import "prismjs/components/prism-{{ . }}";
