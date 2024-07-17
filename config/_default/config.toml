@@ -55,9 +55,7 @@ enableRobotsTXT = true
     plugins = [
       "normalize-whitespace",
      "copy-to-clipboard",
-      "line-numbers",
-      "command-line",
-      "diff-highlight"
+
     ]
   
   # By default, the theme creates resized versions of images ranging from 300 to
