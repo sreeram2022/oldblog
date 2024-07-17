@@ -54,8 +54,7 @@ enableRobotsTXT = true
     ]
     plugins = [
       "normalize-whitespace",
-      "toolbar",
-      "copy-to-clipboard",
+     "copy-to-clipboard",
       "line-numbers",
       "command-line",
       "diff-highlight"
