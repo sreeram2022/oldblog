@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "https://sreeram2022.github.io/blog/"
 copyright = "Copyright © 2021"
 title = "Sreeram Venkata"
 #paginate = 10
@@ -40,7 +40,7 @@ enableRobotsTXT = true
 
   [params.logo]
     text = "Sreeram"
-    url = "/blog"
+    url = "/"
 
   [params.prism]
     languages = [
