@@ -1,3 +1,5 @@
+ @import "../blog/prismjs/plugins/toolbar/prism-toolbar.css"
+
 import Prism from "prismjs";
 
 {{ range $.Site.Params.prism.languages }}
