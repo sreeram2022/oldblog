@@ -1,9 +1,11 @@
 ---
-author: Sreeram venkata
 title: How do I use my zsh
-date: 2024-03-08
+date: 2024-07-13
 description: A brief guide to setup ZSH
-math: true
+comments: true
+socialShare: true
+toc: true
+
 tags:
   - "mac"
   - "linux"

@@ -1,9 +1,13 @@
 ---
 title: "Vim usage"
-date: "2021-10-16T23:51:37+02:00"
-comments: false
+date: 2024-07-06
+comments: true
 socialShare: true
 toc: true
+description: An into to VIM
+tags:
+  - "mac"
+  - "linux"
 ---
 
 ![It's vim](vim.jpg)

@@ -76,18 +76,15 @@
       "post-header",
       "post-heading__anchor",
       "post-meta",
-      "post-meta__author",
       "post-tag",
       "post-tags",
       "search",
       "search__suggestions--hidden",
       "sidebar",
-      "sidebar__heading",
       "social-share",
       "social-share__heading",
       "social-share__item",
-      "theme__toggle",
-      "toc"
+      "theme__toggle"
     ],
     "ids": [
       "TableOfContents",
@@ -108,11 +105,10 @@
       "prism-light",
       "programmer-analyst-trainee-dec-2023--present",
       "projects",
-      "search__suggestions",
       "search__text",
+      "search_suggestions",
       "sreeram-venkata",
-      "technical-skills",
-      "vim-usage"
+      "technical-skills"
     ]
   }
 }
