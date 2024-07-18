@@ -1,4 +1,3 @@
- @import "blog/prismjs/plugins/toolbar/prism-toolbar.css"
 
 import Prism from "prismjs";
 

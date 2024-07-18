@@ -33,7 +33,7 @@ enableRobotsTXT = true
   # gray red green yellow blue purple aqua orange, defaults to blue
   themeColor = "blue"
   # soft medium hard, defaults to medium
-  #themeContrast = "medium"
+  themeContrast = "medium"
   author = "Michael Schnerring"
   subtitle = "Theme Demo"
   description = "A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes."
@@ -54,11 +54,7 @@ enableRobotsTXT = true
     ]
     plugins = [
       "normalize-whitespace",
-      "toolbar",
       "copy-to-clipboard",
-      "line-numbers",
-      "command-line",
-      "diff-highlight"
     ]
   
   # By default, the theme creates resized versions of images ranging from 300 to
