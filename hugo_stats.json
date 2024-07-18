@@ -81,10 +81,12 @@
       "search",
       "search__suggestions--hidden",
       "sidebar",
+      "sidebar__heading",
       "social-share",
       "social-share__heading",
       "social-share__item",
-      "theme__toggle"
+      "theme__toggle",
+      "toc"
     ],
     "ids": [
       "TableOfContents",

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html
   lang="{{ .Site.Language.Lang | default "en" }}"
@@ -11,14 +12,13 @@
         <div class="content">
           {{ block "main" . }}{{ end }}
         </div>
-        {{ if .IsHome }}
-          {{ partial "sidebar.html" . }}
-        {{ else }}
+        {{ if strings.HasPrefix .Permalink "/blog/blog/" }}
           <div class="sidebar">
             <h2>Table of Contents</h2>
             {{ .TableOfContents }}
-            <!-- Add other sidebar features for individual posts here -->
           </div>
+        {{ else }}
+          {{ partial "sidebar.html" . }}
         {{ end }}
       </main>
       {{ partial "footer.html" . }}
