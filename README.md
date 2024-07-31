@@ -1,1 +1,1 @@
-https://sreeram2022.github.io/blog/
+https://sreeram2022.github.io/oldblog/
